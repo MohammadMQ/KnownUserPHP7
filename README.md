@@ -13,4 +13,13 @@ This repo contains the docker-compose yml file that generate following images:
 	- docker-compose build
 	- docker-compose up 
 
-*This above commands will generate following docker container and images:*
+*This above commands will generate following docker containers and images:*
+
+| Image name  |
+| ------------- |
+| momiqueueit/knownuser_php7_language |
+| momiqueueit/knownuser_apache_web_server |
+| momiqueueit/knownuser_alpine_linux_os |
+| httpd |
+| alpine |
+| php  |
