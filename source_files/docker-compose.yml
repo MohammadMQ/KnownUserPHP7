@@ -1,0 +1,79 @@
+#NOTES 
+#This ymal file related to user story 4496 (KnownUser PHP 7 Dev. image)
+
+#HOW TO USE THIS YML FILE
+# Stand in the same directory as docker-compose.yml file using command prompt 
+# Run docker-compose build
+# Run docker-compose up
+
+version: '2'
+
+services:
+  #------------------------------------------------------------
+  operating_system: #name the image
+    container_name: operating_system
+    image: momiqueueit/knownuser_alpine_linux_os #in order to be able to push image to hub.docker.com the image name has to begin with username of docker account
+    build:
+      context: . #current folder
+      dockerfile: ./docker/docker-alpine.dockerfile #use this docker file to do the build
+    
+     #env_file:
+      #- ./docker/env/alpine.${APP_ENV}.env #exract all variables inside the file and make available inside container
+
+    environment:
+      - APP_ENV=development
+
+    networks: 
+      - localhost-network 
+
+  #------------------------------------------------------------    
+  web_server:
+    container_name: web_server
+    image: momiqueueit/knownuser_apache_web_server
+    build:
+      context: . 
+      dockerfile: ./docker/docker-apache.dockerfile 
+    
+    ports:
+      - "80:80"
+    #volumes:
+    #  -.:/var/www
+    #working_dir:
+    #    /var/www
+    
+     #env_file:
+      #-./docker/env/apache.${APP_ENV}.env #extract all variables inside the file and make available inside container 
+
+    environment:
+      - ServerName=myservice.docker.localhost
+      - APACHE_SERVER_NAME=myservice.docker.localhost
+
+    networks: 
+      - localhost-network 
+
+  #------------------------------------------------------------
+  scripting_language:
+    container_name: scripting_language
+    image: momiqueueit/knownuser_php7_language      
+    build:
+      context: . 
+      dockerfile: ./docker/docker-php.dockerfile 
+
+     #env_file:
+       #-./docker/env/php.${APP_ENV}.env #exract all variables inside the file and make available inside container 
+
+    environment:
+      - PHP_SHORT_OPEN_TAG=On
+      - PHP_DISPLAY_ERRORS=On
+      - PHP_HTML_ERRORS=On
+      - PHP_XDEBUG_ENABLED=true
+
+    networks: 
+      - localhost-network 
+
+networks: 
+      localhost-network:
+       driver: bridge 
+
+    #volumes:
+     #- ./:/app
