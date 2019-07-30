@@ -13,4 +13,4 @@ This repo contains the docker-compose yml file that generate following images:
 	- docker-compose build
 	- docker-compose up 
 
-
+*This above commands will generate following docker container and images:*
