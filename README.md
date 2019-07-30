@@ -24,7 +24,7 @@ This repo contains the docker-compose yml file that generate following images:
 | alpine  |   |
 | php  |   |
 
-
+[========]
 #### After notes
 Above images are build from following official docker images:
 - alpine (https://hub.docker.com/_/alpine)
