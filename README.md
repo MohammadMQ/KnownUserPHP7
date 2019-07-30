@@ -23,3 +23,12 @@ This repo contains the docker-compose yml file that generate following images:
 | httpd |
 | alpine |
 | php  |
+
+| Image name  | Second Header |
+| ------------- | ------------- |
+| momiqueueit/knownuser_php7_language  | scripting_language  |
+| momiqueueit/knownuser_apache_web_server  | web_server  |
+| momiqueueit/knownuser_alpine_linux_os  | operating_system  |
+| httpd  |   |
+| alpine  |   |
+| php  |   |
