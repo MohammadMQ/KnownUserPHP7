@@ -10,6 +10,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "source_files", "source_file
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app", "app", "{061B1478-7FBC-4C40-A393-DE9F07E76AD9}"
+	ProjectSection(SolutionItems) = preProject
+		empty.txt = empty.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{925627E0-3612-4761-9B2F-F9BB8932C1B2}"
 	ProjectSection(SolutionItems) = preProject
@@ -27,12 +30,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "env", "env", "{61E02448-671
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "public-html", "public-html", "{40061094-7B0D-48BB-98D1-D0626297690B}"
+	ProjectSection(SolutionItems) = preProject
+		empty.txt = empty.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "usr", "usr", "{89EDF732-6288-468E-B89B-E367C79BD326}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D74275FE-12A9-48E1-AB67-B7FFA14DC9C1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "myapp", "myapp", "{E4E94FFA-810C-492E-9C36-AA44F5B8CC57}"
+	ProjectSection(SolutionItems) = preProject
+		empty.txt = empty.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
