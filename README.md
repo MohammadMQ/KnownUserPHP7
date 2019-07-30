@@ -15,16 +15,7 @@ This repo contains the docker-compose yml file that generate following images:
 
 *This above commands will generate following docker containers and images:*
 
-| Image name  |
-| ------------- |
-| momiqueueit/knownuser_php7_language |
-| momiqueueit/knownuser_apache_web_server |
-| momiqueueit/knownuser_alpine_linux_os |
-| httpd |
-| alpine |
-| php  |
-
-| Image name  | Second Header |
+| Image name  | Container name |
 | ------------- | ------------- |
 | momiqueueit/knownuser_php7_language  | scripting_language  |
 | momiqueueit/knownuser_apache_web_server  | web_server  |
