@@ -7,7 +7,11 @@ This repo contains the docker-compose yml file that generate following images:
 - knownuser_php7_language;
 
 ### How to use this repo
-- Clone this repo and open in visual studio code 
+- Clone this repo and open in visual studio code
+- Create following folders inside the **source_files** folder:
+	- app
+	- public-html
+	- usr/src/myapp
 - Right click docker-compose.yml and choose 'Open in terminal' 
 - Inside the terminal run: 
 	- docker-compose build
