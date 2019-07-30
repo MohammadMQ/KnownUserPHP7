@@ -7,9 +7,9 @@ This repo contains the docker-compose yml file that generate following images:
 - knownuser_php7_language;
 
 ### How to use this repo
-- Clone this repo 
-- Start command prompt (cmd) where docker-compose.yml file is located
-- Inside cmd run: 
+- Clone this repo and open in visual studio code 
+- Right click docker-compose.yml and choose 'Open in terminal' 
+- Inside the terminal run: 
 	- docker-compose build
 	- docker-compose up 
 
