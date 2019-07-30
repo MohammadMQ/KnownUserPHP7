@@ -10,8 +10,8 @@ This repo contains the docker-compose yml file that generate following images:
 - Clone this repo 
 - Start command prompt (cmd) where docker-compose.yml file is located
 - Inside cmd run: 
-	- docker-compose build
-	- docker-compose up 
+	- > docker-compose build
+	- > docker-compose up 
 
 *This above commands will generate following docker containers and images:*
 
@@ -24,8 +24,8 @@ This repo contains the docker-compose yml file that generate following images:
 | alpine  |   |
 | php  |   |
 
-[========]
-#### After notes
+
+**After notes**
 Above images are build from following official docker images:
 - alpine (https://hub.docker.com/_/alpine)
 - apache / httpd (https://hub.docker.com/_/httpd)
