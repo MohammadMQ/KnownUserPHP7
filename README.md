@@ -29,7 +29,6 @@ This repo contains the docker-compose yml file that generate following images:
 | php  |   |
 
 <br/>
-<br/>
 
 #### Notes
 Above images are build from following official docker images:
@@ -37,3 +36,11 @@ Above images are build from following official docker images:
 - apache / httpd (https://hub.docker.com/_/httpd)
 - php (https://hub.docker.com/_/php)
 
+#### Bugs
+Currently following errors occours when running **docker-compose up**
+operating_system      | ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/run/mysqld/mysqld.sock' (2 "No such file or directory")
+operating_system exited with code 1
+web_server            | AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.25.0.3. Set the 'ServerName' directive globally to suppress this message
+web_server            | AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.25.0.3. Set the 'ServerName' directive globally to suppress this message
+web_server            | [Tue Jul 30 15:44:28.199912 2019] [mpm_event:notice] [pid 1:tid 139726329169024] AH00489: Apache/2.4.39 (Unix) configured -- resuming normal operations
+scripting_language    | <p>Hello World</p> scripting_language exited with code 0
